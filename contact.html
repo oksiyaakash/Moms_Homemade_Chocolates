@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
+<link rel="shortcut icon" href="./images/Mom_s_logo2-removebg1.png" type="image/x-icon">
   <title>Mom's Homemade Chocolates</title>
 
 
@@ -98,21 +98,21 @@
                   Contact Us
                 </h2>
               </div>
-              <form action="">
+              <form action="" method="post" name="contact-form">
                 <div>
-                  <input type="text" placeholder="Full Name " />
+                  <input type="text" name="your-name" placeholder="Full Name " />
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone number" />
+                  <input type="number" name="your-number" placeholder="Phone number" />
                 </div>
                 <div>
-                  <input type="email" placeholder="Email" />
+                  <input type="email" name="your-email" placeholder="Email" />
                 </div>
                 <div>
-                  <input type="text" class="message-box" placeholder="Message" />
+                  <input type="text" name="message" class="message-box" placeholder="Message" />
                 </div>
                 <div class="d-flex ">
-                  <button>
+                  <button type="submit" value="Submit" id="submit">
                     SEND NOW
                   </button>
                 </div>
@@ -122,7 +122,9 @@
           <div class="col-md-6  px-0">
             <div class="map_container">
               <div class="map">
-                <div id="googleMap"></div>
+                <div id="googleMap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d346.42691238814353!2d79.15517323749657!3d21.159828902534386!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1733323385381!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -262,6 +264,8 @@
   </footer>
   <!-- footer section -->
 
+  <!-- Google sheet -->
+  <script src="./js/google sheet.js"></script>
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
