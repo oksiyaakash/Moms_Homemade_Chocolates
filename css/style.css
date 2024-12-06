@@ -458,11 +458,21 @@ a:focus {
   color: #ffffff;
   padding: 15px;
   margin-top: 10px;
+  opacity: 0.75;
+  
+}
+
+/* .chocolate_section .box .detail-box {
+  width: 100%;
+  background-color: #46200b;
+  color: #ffffff;
+  padding: 15px;
+  margin-top: 10px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
+} */
 
 .chocolate_section .box .detail-box h6 {
   text-transform: uppercase;
@@ -488,8 +498,12 @@ a:focus {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-.chocolate_section .box:hover .detail-box {
+.chocolate_section .detail-box {
   visibility: visible;
+  opacity: 1;
+}
+
+.chocolate_section .box:hover .detail-box {
   opacity: 1;
 }
 
@@ -649,7 +663,7 @@ a:focus {
 
 .client_section .client_container {
   background-image: url(../images/client-bg.png);
-  background-size: 90% 100%;
+  background-size: 100% 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -692,7 +706,8 @@ a:focus {
 }
 
 .client_section .client_container .box .detail-box {
-  margin-top: 45px;
+  margin-top: 0%;
+  padding-left: 10%;
 }
 
 .client_section .client_container .box .detail-box h4 {

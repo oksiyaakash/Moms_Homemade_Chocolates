@@ -100,16 +100,25 @@
               </div>
               <form action="https://script.google.com/macros/s/AKfycbz6R5N9b8HJ_NnU0kilDCjAjLhg3x4Z4E7ED8BC1kTiZW4NZdlTQUCjDPl3wAQ3x48ClQ/exec"  method="post" name="contact-form">
                 <div>
-                  <input type="text" name="your-name" placeholder="Full Name " />
+                  <input type="text" name="your-name" placeholder="Full Name " required />
                 </div>
                 <div>
-                  <input type="number" name="your-number" placeholder="Phone number" />
+                  <input type="number" name="your-number" placeholder="Phone number" required/>
                 </div>
                 <div>
-                  <input type="email" name="your-email" placeholder="Email" />
+                  <input type="email" name="your-email" placeholder="Email"  required/>
                 </div>
                 <div>
-                  <input type="text" name="message" class="message-box" placeholder="Message" />
+                  <label for="list">Query For : </label>
+                 <select name="query-for" id="list"  required>
+                  <option value="">--Select Option--</option>
+                  <option value="Franchise">Franchise</option>
+                  <option value="Product Purchase">Product Purchase</option>
+                 </select>
+                </div>
+                <br>
+                <div>
+                  <input type="text" name="message" class="message-box" placeholder="Message" required />
                 </div>
                 <div class="d-flex ">
                   <button type="submit" value="Submit" id="submit">
@@ -168,7 +177,7 @@
           </div>
         </div>
         <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-2">
             <div class="info_links">
               <h4>
                 Menu
@@ -218,7 +227,7 @@
               </p>
             </div> -->
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-4">
             <h4>
               Contact Us
             </h4>
